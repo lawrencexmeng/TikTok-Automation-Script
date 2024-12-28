@@ -2,27 +2,18 @@ import praw
 import pandas as pd
 import os
 
-# # for post in top_posts:
-# #     print("Title: ", post.title)
-# #     print("ID: ", post.id)
-# #     print("Author: ", post.author)
-# #     print("URL - ", post.url)
-# #     print("Score: ", post.score)
-# #     print("Comment count: ", post.num_comments)
-# #     print("Created: ", post.created_utc)
-# #     print("\n")
 
 
 reddit = praw.Reddit(
-    client_id="7K1mdKwMS65ptK-vS7fdCg",
-    client_secret="4yiGbtHYHXpADtfGqJgVC4pWOo2HQQ",
+    client_id="REDDIT_CLIENT_ID",
+    client_secret="REDDIT_CLIENT_SECRET",
     user_agent="vid-maker by Law ",
     # username="",
     # password="",
 )
 
 
-post_id = input("Post ID 1dm430a: ")
+post_id = input("Post ID: ")
 csv_file_path = r'C:\Users\lawre\Desktop\TikTok Posting Script\post_info.csv'
 
 if os.path.exists(csv_file_path):

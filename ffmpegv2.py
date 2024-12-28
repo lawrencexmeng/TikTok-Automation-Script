@@ -62,11 +62,11 @@ def perform_clipchamp_actions(driver, text, key):
 def login_clipchamp(driver):
     wait_and_click(driver, By.XPATH, "//button[@data-testid='provider-google']")
     google_email_input_field = wait_and_find(driver, By.XPATH, "//input[@type='email']")
-    google_email_input_field.send_keys("taprojectlawrence@gmail.com")
+    google_email_input_field.send_keys("EMAIL") #EMAIL
     wait_and_click(driver, By.XPATH, "//button[span[text()='Next']]")
     time.sleep(5)
     google_password_input_field = wait_and_find(driver, By.XPATH, "//input[@type='password']")
-    google_password_input_field.send_keys("TAPProject123")
+    google_password_input_field.send_keys("PASSWORD") #PASSWORD
     wait_and_click(driver, By.XPATH, "//button[span[text()='Next']]")
     wait_and_click(driver, By.XPATH, "//button[span[text()='Continue']]")
 
